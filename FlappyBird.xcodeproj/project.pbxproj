@@ -11,6 +11,7 @@
 		7A32D2772B5F11F700F4B8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2762B5F11F700F4B8DB /* ContentView.swift */; };
 		7A32D2792B5F11FB00F4B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */; };
 		7A32D27C2B5F11FB00F4B8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A32D27B2B5F11FB00F4B8DB /* Preview Assets.xcassets */; };
+		7A32D2832B5F124900F4B8DB /* BirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2822B5F124900F4B8DB /* BirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7A32D2762B5F11F700F4B8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A32D27B2B5F11FB00F4B8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A32D2822B5F124900F4B8DB /* BirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7A32D2742B5F11F700F4B8DB /* FlappyBirdApp.swift */,
 				7A32D2762B5F11F700F4B8DB /* ContentView.swift */,
+				7A32D2822B5F124900F4B8DB /* BirdView.swift */,
 				7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */,
 				7A32D27A2B5F11FB00F4B8DB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A32D2832B5F124900F4B8DB /* BirdView.swift in Sources */,
 				7A32D2772B5F11F700F4B8DB /* ContentView.swift in Sources */,
 				7A32D2752B5F11F700F4B8DB /* FlappyBirdApp.swift in Sources */,
 			);
