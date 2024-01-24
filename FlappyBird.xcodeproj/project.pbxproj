@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7A32D2752B5F11F700F4B8DB /* FlappyBirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2742B5F11F700F4B8DB /* FlappyBirdApp.swift */; };
-		7A32D2772B5F11F700F4B8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2762B5F11F700F4B8DB /* ContentView.swift */; };
+		7A32D2772B5F11F700F4B8DB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2762B5F11F700F4B8DB /* GameView.swift */; };
 		7A32D2792B5F11FB00F4B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */; };
 		7A32D27C2B5F11FB00F4B8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A32D27B2B5F11FB00F4B8DB /* Preview Assets.xcassets */; };
 		7A32D2832B5F124900F4B8DB /* BirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2822B5F124900F4B8DB /* BirdView.swift */; };
+		7A32D2852B5F16EF00F4B8DB /* PipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2842B5F16EE00F4B8DB /* PipeView.swift */; };
+		7A32D2872B5F1C7000F4B8DB /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32D2862B5F1C7000F4B8DB /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A32D2712B5F11F700F4B8DB /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A32D2742B5F11F700F4B8DB /* FlappyBirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdApp.swift; sourceTree = "<group>"; };
-		7A32D2762B5F11F700F4B8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A32D2762B5F11F700F4B8DB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A32D27B2B5F11FB00F4B8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A32D2822B5F124900F4B8DB /* BirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdView.swift; sourceTree = "<group>"; };
+		7A32D2842B5F16EE00F4B8DB /* PipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeView.swift; sourceTree = "<group>"; };
+		7A32D2862B5F1C7000F4B8DB /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				7A32D2742B5F11F700F4B8DB /* FlappyBirdApp.swift */,
-				7A32D2762B5F11F700F4B8DB /* ContentView.swift */,
+				7A32D2762B5F11F700F4B8DB /* GameView.swift */,
 				7A32D2822B5F124900F4B8DB /* BirdView.swift */,
+				7A32D2842B5F16EE00F4B8DB /* PipeView.swift */,
+				7A32D2862B5F1C7000F4B8DB /* ResultView.swift */,
 				7A32D2782B5F11FB00F4B8DB /* Assets.xcassets */,
 				7A32D27A2B5F11FB00F4B8DB /* Preview Content */,
 			);
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A32D2832B5F124900F4B8DB /* BirdView.swift in Sources */,
-				7A32D2772B5F11F700F4B8DB /* ContentView.swift in Sources */,
+				7A32D2772B5F11F700F4B8DB /* GameView.swift in Sources */,
+				7A32D2872B5F1C7000F4B8DB /* ResultView.swift in Sources */,
+				7A32D2852B5F16EF00F4B8DB /* PipeView.swift in Sources */,
 				7A32D2752B5F11F700F4B8DB /* FlappyBirdApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +290,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,9 +300,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iosDev.vaglover.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,8 +324,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +334,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iosDev.vaglover.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

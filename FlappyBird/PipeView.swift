@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct PipeView: View {
+    
+    let topPipeHeight: CGFloat
+    let pipeWidth: CGFloat
+    let pipeSpacing: CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            
+            let avaliableSpacing  = geometry.size.height - pipeSpacing
+            let bottomPipeHeight = avaliableSpacing - topPipeHeight
+            
+            VStack {
+                Image(.flappeBirdPipe)
+                    .resizable()
+                    .rotationEffect(.degrees(180))
+                    .frame(width: pipeWidth,
+                           height: topPipeHeight)
+                
+                Spacer()
+                    .frame(height: pipeSpacing)
+                
+                Image(.flappeBirdPipe)
+                    .resizable()
+                    .frame(width: pipeWidth,
+                           height: bottomPipeHeight)
+            }
+        }
     }
 }
 
 #Preview {
-    PipeView()
+    PipeView(
+        topPipeHeight: 300,
+        pipeWidth: 100,
+        pipeSpacing: 100
+    )
 }
